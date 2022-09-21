@@ -1,18 +1,57 @@
+:root{
+    --intro-h1: #484B57;
+    --teste: #FF594E;
+    --teste1: #3B4157;
+    --intro-subtitle-text: white;
+    --teste3: #F5F5F5;
+    --intro-subtitle-background: #1FAB36;
+}
+
+@font-face {
+    font-family: Effra Bold;
+    src: url(../fonts/);
+}
+
 *{
+    font-family: Roboto, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 body{
-    width: 90%;
-    margin: 32px auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 24px;
 }
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 5px;
+    padding: 54px 0 50px 0;
+}
+.introContent{
+    height: 930px;
+    background-image: url(../img/background-desktop.png);
+}
+.introContent h1{
+    font-size: 54px;
+    margin: 54px 0 34px;
+    color: var(--intro-h1);
+}
+.introContent p{
+    font-size: 26px;
+    font-family: Effra;
+    color: var(--intro-subtitle-text);
+    margin-left: 50px;
+    
+}
+.introContent span{
+    background-color: var(--intro-subtitle-background);
+}
+
 article{
     text-align: justify;
 }
