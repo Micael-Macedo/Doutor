@@ -10,7 +10,7 @@
     <body>
         <header><img src="img/logo_Doutor-Nature.svg" alt=""></header>
         <section class="introContent">
-            <h1>O jeito certo de hidratar a pele tipo "crepe"</h1>
+            <h1>O jeito certo de hidratar a pele <br>tipo "crepe"</h1>
             <p><span>E porque a indústria de cosméticos nunca falou sobre isso...</span></p>
             <iframe width="960" height="540" src="https://www.youtube.com/embed/5lDhkpEGgj8"
                 title="YouTube video player" frameborder="0"
@@ -19,116 +19,158 @@
             </iframe>
         </section>
 
-        <section>
-            <h2>Porque cremes não hidratam esse tipo de pele "crepe"?</h2>
-            <p>Descubra uma alternativa mais eficiente.</p>
-            <article>
-                <p>Em minhas pesquisas descobri que cremes hidratantes comuns, não funcionam em peles finas e
-                    ressecadas, com aparência amassada, que popularmente são chamadas de "pele crepe".</p>
-                <p>A razão disso é porque existem pequenas rachaduras na superfície desse tipo de pele, por onde a água
-                    vaza. Dessa forma, não adiante insistir aplicando cremes hidratantes, pois sua pele não vai reter
-                    essa hidratação.</p>
-                <p>Já quando você ingere alguns compostos específicos, e passa a hidratar sua pele de dentro para fora,
-                    ai o jogo vira a seu favor. Active Anti Ox é uma fórmula que desenvolvi junto de minha equipe, para
-                    ajudar a hidratar e recuperar a sua pele agindo de dentro para fora.</p>
-            </article>
+        <section class="researchSkin">
+            <h2>Porque cremes não hidratam <br>esse tipo de pele "crepe"?</h2>
+            <h3>Descubra uma alternativa mais eficiente.</h3>
+            <div class="researchSkinContent">
+                <article>
+                    <p>Em minhas pesquisas descobri que <b>cremes hidratantes comuns, não funcionam em peles finas e
+                            ressecadas</b>, com aparência amassada, que popularmente são chamadas de "pele crepe".</p>
+                    <br>
+                    <p>A razão disso é <b>porque existem pequenas rachaduras na superfície desse tipo de pele</b> , por
+                        onde a água
+                        vaza. Dessa forma,<b> não adiante insistir aplicando cremes hidratantes</b>, pois sua pelenão
+                        vai reter
+                        essa hidratação.
+                    </p>
+                    <br>
+                    <p>Já quando você ingere alguns compostos específicos, e passa a hidratar sua pele de dentro para
+                        fora,
+                        <b>ai o jogo vira a seu favor. Active Anti Ox</b> é uma fórmula que desenvolvi junto de minha
+                        equipe, para
+                        ajudar a hidratar e recuperar a sua pele <b>agindo de dentro para fora.</b>
+                    </p>
+                </article>
+                <img src="img/doutor-rafael.png" alt="">
+            </div>
         </section>
-
-        <section>
-            <h2>você não verá preço menor em outro lugar</h2>
-            <div>
-                <div>
-                    <h3>Escolha seu pacote</h3>
-                    <div>
-                        <button>1 CAIXA</button>
-                        <button>3 CAIXA</button>
-                        <button>6 CAIXA</button>
+        <section style="background-color: #3B4157;" class="packagesPriceSection">
+            <div class="uniqueOffer">
+                <h3>OFERTA ÚNICA</h3>
+            </div>
+            <div class="packagesOptions">
+                <h2>Você não verá preço menor em outro lugar</h2>
+                <div class="packagesOptionsContent">
+                    <div class="card-box">
+                        <div class="card-title">ESCOLHA SEU PACOTE</div>
+                        <div class="card-buttonOption">
+                            <button onclick="qtdBox(1)">1 <br>CAIXA</button>
+                            <button onclick="qtdBox(2)">3 <br>CAIXAS</button>
+                            <button onclick="qtdBox(3)">6 <br>CAIXAS</button>
+                        </div>
+                        <div class="card-description">
+                            <div class="card-description-1box">
+                                <h4>R$148,60 por caixa</h4>
+                                <p>Economize R$ 136,20</p>
+                                <h4>HOJE: 12x R$49,99</h4>
+                                <p>ou R$44,80 à vista</p>
+                                <button class="card-buyNow">Compra Agora</button>
+                            </div>
+                            <div class="card-description-2box" style="display: none;">
+                                <p>R$148,60</p>
+                            </div>
+                            <div class="card-description-3box" style="display: none;">
+                                <p>R$148,60</p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <p> R$ 194,00 por caixa</p>
-                        <p>Economize R$ 136,20</p>
-                        <p>HOJE: 12X R$ 49,99</p>
-                        <p>ou R$ 445,80 à vista</p>
-                    </div>
-                    <button>Comprar Agora</button>
-                </div>
-                <div>
-                    <h3>ASSINE E ECONOMIZE(OPCIONAL)</h3>
-                    <div>
-                        <div><img src="img/check-icon-green.png" alt=""></div>
-                        <div><img src="img/check-icon-green.png" alt=""></div>
-                        <div><img src="img/check-icon-green.png" alt=""></div>
-                        <div><img src="img/check-icon-green.png" alt=""></div>
-                        <div><button><img src="img/check-icon-mobile-checked.png" alt=""></button>
-                            <p>SIM! Eu quero ser assinante e ganhar DESCONTO!</p>
+                    <div class="card-box">
+                        <div class="card-title">ASSINE E ECONOMIZE(OPCIONAL)</div>
+                        <div class="card-description">
+                            <ul>
+                                <li>Desconto Máximo Aplicado</li>
+                                <li>Entrega Automatica em sua Casa</li>
+                                <li>Menor Preço Garantido / Sem Reajustes</li>
+                                <li>Cancele quando quiser / Sem Taxas</li>
+                            </ul>
+                            <div>
+                                <button class="checkmarkDiscount"><img src="img/check-icon-mobile.png" alt=""></button>
+                                <p>SIM! Eu quero ser assinante e ganhar DESCONTO!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <h2>Se não notar resultados, sua compra sai de graça</h2>
-            <p>Sem perguntas, sem pegadinhas...</p>
-            <div>
+            <h2>Se não notar resultados, sua <br>compra sai de graça</h2>
+            <h3>Sem perguntas, sem pegadinhas...</h3>
+            <div class="guaranteeBox">
                 <img src="img/selo-garantia.png" alt="">
-                <p>Ao fazer o pedido de Active Anti Ox, vocÊ está coberto pela nossa garantia de satisfação. Esta é uma
-                    política que adotamos, e cumprimos à risca, que visa proteger nossos consumidores, para que eles
-                    possam experimentar nossas fórmulas livre de riscos. <br><br>Se após 30 dias vocÊ não estiver
-                    completamente satisfeito/a, devolveremos seu dinheiro em forma de crédito, para usar em qualquer
-                    produto da Doutor Natura - sem perguntas, sem burocracia</p>
+                <div>
+                    <p>Ao fazer o pedido de Active Anti Ox, você está coberto pela nossa garantia de satisfação. Esta é uma
+                        política que adotamos, e cumprimos à risca, que visa proteger nossos consumidores, para que eles
+                        possam experimentar nossas fórmulas livre de riscos.
+                    </p>
+                    <p>
+                        Se após 30 dias você não estiver completamente satisfeito/a, devolveremos seu dinheiro em forma de crédito, para usar em qualquer produto da Doutor Natura - sem perguntas, sem burocracia
+                    </p>
+                </div>
             </div>
         </section>
         <section>
-            <h2>Veja alguns resultados do Active Anti Ox*</h2>
-            <p>Experimente e comece a hidratar sua pele de verdade</p>
-            <div>
-                <img src="img/image10.jpg" alt=""><img src="img/image11.jpg" alt=""><img src="img/image7.jpg"
-                    alt=""><img src="img/image8.jpg" alt="">
+            <h2>Veja alguns resultados do Active <br>Anti Ox*</h2>
+            <h3>Experimente e comece a hidratar sua pele de verdade</h3>
+            <div class="flexActiveResult">
+                <div class="activeResult">
+                    <img src="img/image7.jpg" alt="">
+                    <img src="img/image8.jpg" alt="">
+                    <img src="img/image9.jpg"alt="">
+                    <img src="img/image10.jpg" alt="">
+                </div>
             </div>
             <p>*Somos honestos e transparentes com nossos clientes, os resultados podem variar de pessoa para pessoa,
                 cada organismo é único e vai reagir aos componentes de forma diferente. Aproveite a nossa garantia
                 incondicional, compre e avalie vocÊ mesmo os resultados. Esta fórmula foi desenvolida por médico e sua
-                equipe de pesquisadores</p>
+                equipe de pesquisadores
+            </p>
         </section>
-        <section>
+        <section style="background-color: #3B4157;">
             <h2>Tire suas dúvidas</h2>
             <div>
-                <div>
+                <div class="activeDoubt">
                     <button>+</button>
                     <div>Do que é feito o Active Anti-OX?</div>
                     <div></div>
                 </div>
-                <div>
+                <hr>
+                <div class="activeDoubt">
                     <button>+</button>
                     <div>Como devo usar o Active Anti-OX?</div>
                     <div></div>
                 </div>
-                <div>
+                <hr>
+                <div class="activeDoubt">
                     <button>+</button>
                     <div>Active Anti-OX tem contra-indicação?</div>
                     <div></div>
                 </div>
-                <div>
+                <hr>
+                <div class="activeDoubt">
                     <button>+</button>
                     <div>Precisa de prescrição médica para comprar?</div>
                     <div></div>
                 </div>
-                <div>
+                <hr>
+                <div class="activeDoubt">
                     <button>+</button>
                     <div>E se Active Anti-OX não funcionar para mim?</div>
                     <div></div>
                 </div>
-                <div>
+                <hr>
+                <div class="activeDoubt">
                     <button>+</button>
                     <div>Quando posso perceber resultados?</div>
                     <div></div>
                 </div>
-                <div>
+                <hr>
+                <div class="activeDoubt">
                     <button>+</button>
                     <div>Além do Vital 4k o que mais vou receber na minha compra?</div>
                     <div></div>
                 </div>
-                <div>
+                <hr>
+                <div class="activeDoubt">
                     <button>+</button>
                     <div>Vocês tem uma garantia de satisfação?</div>
                     <div></div>
@@ -137,48 +179,78 @@
         </section>
         <section>
             <h2>O melhor suplemento para hidratar sua pele</h2>
-            <p>hidratação de verdade</p>
-            <p>Os ingredientes poderosos do Active Anti Ox trabalham junto para:</p>
-            <ul>
-                <li>Desenvolver a firmeza na pele crepe</li>
-                <li>Preencher as rugas e rachaduras da superfície da pele</li>
-                <li>Reduzir linhas finas do rosto, pescoço e colo</li>
-                <li>Restabelecer o brilho natural da pele</li>
-                <li>Hidratando a pele, de dentro para fora</li>
-            </ul>
-            <div>
+            <h3>hidratação de verdade</h3>
+            <div class="functionActive">
                 <div>
-                    <h3>Escolha seu pacote</h3>
-                    <div>
-                        <button>1 CAIXA</button>
-                        <button>3 CAIXA</button>
-                        <button>6 CAIXA</button>
-                    </div>
-                    <div>
-                        <p> R$ 148,00 por caixa</p>
-                        <p>Economize R$ 136,20</p>
-                        <p>HOJE: 12X R$ 49,99</p>
-                        <p>ou R$ 445,80 à vista</p>
-                    </div>
-                    <button>Comprar Agora</button>
+                    <p>Os ingredientes poderosos do Active Anti Ox trabalham junto para:</p>
+                    <ul>
+                        <li><span>Desenvolver a firmeza na pele crepe</span> </li>
+                        <li><span>Preencher as rugas e rachaduras da superfície da pele</span> </li>
+                        <li><span>Reduzir linhas finas do rosto, pescoço e colo</span> </li>
+                        <li><span>Restabelecer o brilho natural da pele</span> </li>
+                        <li><span>Hidratando a pele, de dentro para fora</span> </li>
+                    </ul>
                 </div>
                 <div>
-                    <h3>ASSINE E ECONOMIZE(OPCIONAL)</h3>
-                    <div>
-                        <div><img src="img/check-icon-green.png" alt=""></div>
-                        <div><img src="img/check-icon-green.png" alt=""></div>
-                        <div><img src="img/check-icon-green.png" alt=""></div>
-                        <div><img src="img/check-icon-green.png" alt=""></div>
-                        <div><button><img src="img/check-icon-mobile-checked.png" alt=""></button>
-                            <p>SIM! Eu quero ser assinante e ganhar DESCONTO!</p>
+                    <img src="img/image11.jpg" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="packagesOptionsContent">
+                    <div class="card-box">
+                        <div class="card-title">ESCOLHA SEU PACOTE</div>
+                        <div class="card-buttonOption">
+                            <button onclick="qtdBox(1)">1 <br>CAIXA</button>
+                            <button onclick="qtdBox(2)">3 <br>CAIXAS</button>
+                            <button onclick="qtdBox(3)">6 <br>CAIXAS</button>
+                        </div>
+                        <div class="card-description">
+                            <div class="card-description-1box">
+                                <h4>R$148,60 por caixa</h4>
+                                <p>Economize R$ 136,20</p>
+                                <h4>HOJE: 12x R$49,99</h4>
+                                <p>ou R$44,80 à vista</p>
+                                <button class="card-buyNow">Compra Agora</button>
+                            </div>
+                            <div class="card-description-2box" style="display: none;">
+                                <p>R$148,60</p>
+                            </div>
+                            <div class="card-description-3box" style="display: none;">
+                                <p>R$148,60</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-box">
+                        <div class="card-title">ASSINE E ECONOMIZE(OPCIONAL)</div>
+                        <div class="card-description">
+                            <ul>
+                                <li>Desconto Máximo Aplicado</li>
+                                <li>Entrega Automatica em sua Casa</li>
+                                <li>Menor Preço Garantido / Sem Reajustes</li>
+                                <li>Cancele quando quiser / Sem Taxas</li>
+                            </ul>
+                            <div>
+                                <button class="checkmarkDiscount"><img src="img/check-icon-mobile.png" alt=""></button>
+                                <p>SIM! Eu quero ser assinante e ganhar DESCONTO!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                </div>
         </section>
         <section>
             <footer>
-                <p>O produto não se destina a diagnosticar, tratar, curar</p>
+                <div style="display: flex; flex-direction: column; text-align: justify;">
+                    <div>
+                        <p style="font-size: 10px;">O produto não se destina a diagnosticar, tratar, curar ou previnir qualquer doença, os resultados podem variar de pessoa para pessoa, esses depoimentos podem ser fictícios, esta informação não constitui aconselhamento médico e não deve ser considera como tal, consulte o seu médico antes de modificar o seu regimento médico regular. Este é um advertorial e não um artigo de notícia ou blog. Produto dispensado da obrigatoriedade de registro conforme RDC</p>
+                        <p style="font-size: 10px;">27/2010</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <img src="img/logo_footer-DoutorNature.svg" alt="">
+                        <p style="font-size: 10px;">@2022 Doutor Nature - Todos os Direitos Reservados - Política de Privacidade | Termos de Uso</p>
+                    </div>
+                </div>
+
             </footer>
         </section>
     </body>
