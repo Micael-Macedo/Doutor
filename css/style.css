@@ -4,19 +4,27 @@
     --heading3: #FF594E;
     --text-content: #3B4157;
     --text2-content:white;
+    --articleBg: white;
     --intro-subtitle-text: white;
     --teste3: #F5F5F5;
     --intro-subtitle-background: #1FAB36;
+    --functionActive-text: #1FAB36;
+    --cardBox-bg: white;
     --card-Quant-packages-title: #606160;
     --card-Quan-packages-unselected: #e6e7e7;
+    --card-Quan-packages-unselected-text: #a6a7a7;
     --card-Quan-packages-hover: #1FAB36;
+    --card-title-text: white;
     --card-packages-buyNow: #FF594E;
     --backgroundColor2: #3B4157;
+    --cardDescription-text: #198754;
+    --footer-bg: #f5f5f5;
+    --footer-text:#989dab;
 }
 
 @font-face {
     font-family: EffraBold;
-    src: url(../fonts/effra_std_rg-webfont.woff);
+    src: url(../fonts/effra_std_bd-webfont.woff
 }
 @font-face {
     font-family: Roboto;
@@ -28,7 +36,6 @@
 }
 
 * {
-    font-family: EffraBold, sans-serif;
     font-size: 26px;
     margin: 0;
     padding: 0;
@@ -36,6 +43,7 @@
 }
 
 p {
+    font-family: EffraBold, sans-serif;
     line-height: 2;
     text-align: justify;
 }
@@ -59,6 +67,7 @@ header {
 
 h1,
 h2 {
+    font-family: EffraBold, sans-serif;
     font-size: 54px;
     color: var(--intro-h1);
 }
@@ -66,6 +75,7 @@ h2 {
     color: var(--heading2-type2);
 }
 h2 {
+    font-family: Roboto, sans-serif;
     margin-bottom: 34px;
 }
 
@@ -77,25 +87,28 @@ h3 {
 section {
     padding: 5% 10%;
 }
-
+section.introContent{
+    padding-top: 20px;
+}
 .introContent {
     background-image: url(../img/background-desktop.png);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-
     display: flex;
+    align-items: center;
     justify-content: center;
+    
 }
 
 .introContent h1 {
     font-size: 54px;
-    margin: 54px 0 34px;
     color: var(--intro-h1);
 }
 .text2-content p{
     color: var(--text2-content);
 }
 .introContent p {
+    text-align: center;
     font-size: 26px;
     font-family: Roboto, sans-serif;
     margin-bottom: 30px;
@@ -107,19 +120,20 @@ section {
 }
 .VideoContent{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    max-width: 80%;
     margin: 0 auto;
-    padding: 0 0;
+    padding: 10%;
 }
 .youtubeContent {
     width: 100%;
     height: 0;
+    margin: 0 auto;
     padding-bottom: 56.25%;
     position: relative;
 }
 .youtubeContent iframe{
+    width: 100%;
+    height: 100%;
     position: absolute;
 }
 
@@ -136,6 +150,7 @@ section {
     position: relative;
 }
 .researchSkinContent article {
+    background-color: var(--articleBg);
     width: 55%;
     text-align: justify;
     padding-bottom: 80px;
@@ -165,7 +180,7 @@ section {
 .packagesOptions h2 {
     margin-top: 0;
     margin-bottom: 32px;
-    color: white;
+    color: var(--heading2-type2);
 }
 
 .packagesOptionsContent {
@@ -183,17 +198,17 @@ section {
     height: 460px;
     padding: 30px 24px;
     border-radius: 20px;
-    background-color: white;
+    background-color: var(--cardBox-bg);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .card-box-signature{
     display: flex;
     flex-direction: column;
-    width: 380px;
-    height: 380px;
-    padding: 30px 24px;
+    width: 375px;
+    height: fit-content;
+    padding: 30px 2%;
     border-radius: 20px;
-    background-color: white;
+    background-color: var(--cardBox-bg);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -204,9 +219,10 @@ section {
     text-align: center;
     background-color: var(--card-Quant-packages-title);
     border-radius: 10px;
-    color: white;
+    color: var(--card-title-text);
     margin-bottom: 20px;
     padding: 15px 5%;
+    font-family: Effrabold, sans-serif;
 
 }
 
@@ -222,7 +238,7 @@ section {
 .card-buttonOption button {
     cursor: pointer;
     display: flex;
-    color: white;
+    color: var(--card-Quan-packages-unselected-text);
     background-color: var(--card-Quan-packages-unselected);
     border: var(--card-Quan-packages-unselected);
     border-radius: 5px;
@@ -234,6 +250,7 @@ section {
 }
 
 .card-buttonOption button:hover {
+    color: var(--text2-content);
     background-color: var(--card-Quan-packages-hover);
     border: var(--card-Quan-packages-hover);
     transform: scale(1.1);
@@ -245,7 +262,7 @@ section {
     justify-content: center;
 }
 .card-description p{
-text-align: center;
+    text-align: center;
 }
 
 .card-box-signature ul {
@@ -253,6 +270,8 @@ text-align: center;
     padding-left: 40px;
 }
 .card-box-signature li{
+    color: var(--text-content);
+    font-family: Roboto, sans-serif;
     align-self: center;
     font-size: 16px;
     text-align: justify;
@@ -260,12 +279,12 @@ text-align: center;
 }
 
 .card-description p {
-    color: #198754;
+    color: var(--cardDescription-text) ;
 }
 
 .card-buyNow {
     margin-top: 30px;
-    color: white;
+    color: var(--text2-content);
     width: 320px;
     height: 40px;
     background-color: var(--card-packages-buyNow);
@@ -281,8 +300,14 @@ text-align: center;
 
 }
 .cardDescriptionDiscount{
+    height: fit-content;
     display: flex;
     background-color: #e5e7e7;
+    
+}
+.cardDescriptionDiscount p{
+    color: var(--text-content);
+    margin-bottom: 5%;
 }
 .checkmarkDiscount {
     background-color: transparent;
@@ -293,7 +318,7 @@ text-align: center;
 .guaranteeBox {
     padding: 10% 5%;
     display: flex;
-    height: 300px;
+    height: auto;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: justify;
@@ -308,14 +333,16 @@ text-align: center;
     padding-bottom: 15px;
     line-height: 1.5;
 }
-
+.ActiveResultContent p{
+    font-size: 14px;
+}
 .functionActive{
     display: flex;
     justify-content: center;
     text-align: justify;
 }
 .functionActiveText{
-    padding: 0 50px 0 0;
+    padding: auto;
 }
 .functionActiveText p{
     margin-bottom: 20px;
@@ -328,7 +355,7 @@ text-align: center;
 }
 
 .functionActive li {
-    color: #1FAB36;
+    color: var(--functionActive-text);
     margin-bottom: 35px;
 }
 
@@ -345,8 +372,6 @@ text-align: center;
     display: flex;
     align-items: center;
     flex-flow: row wrap;
-    max-width: 650px;
-    min-width: 1300px;
     justify-content: center;
 }
 .QuestionsActive{
@@ -358,20 +383,27 @@ text-align: center;
     gap: 20px;
     margin-bottom: 15px;
 }
-
 .activeDoubt button {
+    display: flex;
+    align-items: center;
     background-color: transparent;
     border: none;
-    color: var(--card-packages-buyNow);
     cursor: pointer;
+    gap: 20px;
+}
+.activeDoubt span{
+    color: var(--card-packages-buyNow);
+}
+.activeAnswer p{
+    color: var(--text2-content);
 }
 .functionActiveContent{
     margin-bottom: 95px;
 }
 .footerContent{
-    background-color: #f5f5f5;
+    background-color: var(--footer-bg);
     margin: 0;
 }
-footer{
-    color: #3B4157;
+footer p{
+    color: var(--footer-text);
 }
