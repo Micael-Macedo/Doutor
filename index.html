@@ -14,16 +14,12 @@
             <div>
                 <h1>O jeito certo de hidratar a pele <br>tipo "crepe"</h1>
                 <p class="text2-content"><span>E porque a indústria de cosméticos nunca falou sobre isso...</span></p>
-                <div class="VideoContent">
-                    <div class="youtubeContent">
-                        <iframe width="100%" height="540" src="https://www.youtube.com/embed/5lDhkpEGgj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
+                <iframe width="980" height="580" src="https://www.youtube.com/embed/5lDhkpEGgj8" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
             </div>
         </section>
-
-
-
         <section class="researchSkin">
             <h2>Porque cremes não hidratam <br>esse tipo de pele "crepe"?</h2>
             <h3>Descubra uma alternativa mais eficiente.</h3>
@@ -63,36 +59,37 @@
                     <div class="card-box">
                         <div class="card-title">ESCOLHA SEU PACOTE</div>
                         <div class="card-buttonOption">
-                            <button onclick="qtdBox(1)">1 <br>CAIXA</button>
-                            <button onclick="qtdBox(3)">3 <br>CAIXAS</button>
-                            <button onclick="qtdBox(6)">6 <br>CAIXAS</button>
+                            <button id="option1Card1" onclick="qtdBox1(1)">1 <br>CAIXA</button>
+                            <button id="option2Card1" onclick="qtdBox1(3)">3 <br>CAIXAS</button>
+                            <button id="option3Card1" onclick="qtdBox1(6)">6 <br>CAIXAS</button>
                         </div>
                         <div class="card-description">
-                            <div class="card-description-1box">
+                            <div id="card1DescriptionBox1">
                                 <h4>R$148,60 por caixa</h4>
                                 <p>Economize R$ 136,20</p>
                                 <h4>HOJE: 12x R$49,99</h4>
                                 <p>ou R$44,80 à vista</p>
                                 <button class="card-buyNow">Compra Agora</button>
                             </div>
-                            <div class="card-description-2box" style="display: none;">
-                                <h4>R$148,60 por caixa</h4>
-                                <p>Economize R$ 136,20</p>
+                            <div id="card1DescriptionBox2" style="display: none;">
+                                <h4>R$138,60 por caixa</h4>
+                                <p>Economize R$ 116,20</p>
                                 <h4>HOJE: 12x R$49,99</h4>
-                                <p>ou R$44,80 à vista</p>
+                                <p>ou R$34,80 à vista</p>
                                 <button class="card-buyNow">Compra Agora</button>
                             </div>
-                            <div class="card-description-3box" style="display: none;">
-                                <h4>R$148,60 por caixa</h4>
-                                <p>Economize R$ 136,20</p>
+                            <div id="card1DescriptionBox3" style="display: none;">
+                                <h4>R$128,60 por caixa</h4>
+                                <p>Economize R$ 96,20</p>
                                 <h4>HOJE: 12x R$49,99</h4>
-                                <p>ou R$44,80 à vista</p>
+                                <p>ou R$24,80 à vista</p>
                                 <button class="card-buyNow">Compra Agora</button>
                             </div>
                         </div>
                     </div>
                     <div class="card-box-signature">
-                        <img src="img/badge.png" alt="" style="position: absolute; margin-left: 324px; margin-top: -75px; width: 86px;">
+                        <img src="img/badge.png" alt=""
+                            style="position: absolute; margin-left: 324px; margin-top: -75px; width: 86px;">
                         <div class="card-title">ASSINE E ECONOMIZE(OPCIONAL)</div>
                         <div class="card-description">
                             <ul>
@@ -102,8 +99,8 @@
                                 <li>Cancele quando quiser / Sem Taxas</li>
                             </ul>
                             <div class="cardDescriptionDiscount">
-                                <button class="checkmarkDiscount"><img src="img/check-icon-mobile.png" alt=""></button>
-                                <p>SIM! Eu quero ser assinante e ganhar DESCONTO!</p>
+                                <button class="checkmarkDiscount" onclick="checkboxDiscount1()"><img src="img/check-icon-mobile.png" alt="" id="CheckBox1"></button>
+                                <p><b>SIM!</b>  Eu quero ser assinante e ganhar DESCONTO!</p>
                             </div>
                         </div>
                     </div>
@@ -116,21 +113,21 @@
             <div class="guaranteeBox">
                 <img src="img/selo-garantia.png" alt="">
                 <div>
-                    <p>Ao fazer o pedido de Active Anti Ox, você está coberto pela nossa garantia de satisfação.
+                    <p>Ao fazer o pedido de Active Anti Ox, <b>você está coberto pela nossa garantia de satisfação.</b> 
                         Esta é uma
                         política que adotamos, e cumprimos à risca, que visa proteger nossos consumidores, para que
                         eles
-                        possam experimentar nossas fórmulas livre de riscos.
+                        possam experimentar nossas fórmulas <b>livre de riscos</b> .
                     </p>
                     <p>
-                        Se após 30 dias você não estiver completamente satisfeito/a, devolveremos seu dinheiro em
-                        forma de crédito, para usar em qualquer produto da Doutor Natura - sem perguntas, sem
+                        Se após <b>30 dias</b>  você não estiver completamente satisfeito/a,<b>devolveremos seu dinheiro em
+                        forma de crédito</b> , para usar em qualquer produto da Doutor Natura - sem perguntas, sem
                         burocracia
                     </p>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="ActiveResultContent">
             <h2>Veja alguns resultados do Active <br>Anti Ox*</h2>
             <h3>Experimente e comece a hidratar sua pele de verdade</h3>
             <div class="flexActiveResult">
@@ -151,55 +148,70 @@
         </section>
         <section class="QuestionsActive">
             <h2 class="h2-type2">Tire suas dúvidas</h2>
-            <div>
+            <div id="QuestionActiveContent">
                 <div class="activeDoubt text2-content">
-                    <button>+</button>
-                    <p>Do que é feito o Active Anti-OX?</p>
-                    <div></div>
+                    <button onclick="displayAnswer(1)"><span>+</span><p>Do que é feito o Active Anti-OX?</p></button>
                 </div>
-                <hr>
+                <hr class="activeDoubtHr">
+                <div style="display: none;" class="activeAnswer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus harum numquam blanditiis explicabo autem soluta exercitationem, cum officiis assumenda et tempore rerum, quia dolores inventore adipisci cupiditate molestiae ab deleniti.</p>
+                </div>
                 <div class="activeDoubt text2-content">
-                    <button>+</button>
-                    <p>Como devo usar o Active Anti-OX?</p>
-                    <div></div>
+                    <button onclick="displayAnswer(2)"><span>+</span><p>Como devo usar o Active Anti-OX?</p></button>
+                    
                 </div>
-                <hr>
+                <hr class="activeDoubtHr">
+                <div style="display: none;" class="activeAnswer">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, magnam eveniet laudantium accusamus reiciendis nemo nostrum incidunt ipsam omnis illo soluta voluptatibus aut fugit explicabo amet, quidem, fuga quod quos.</p>
+                </div>
                 <div class="activeDoubt text2-content">
-                    <button>+</button>
-                    <p>Active Anti-OX tem contra-indicação?</p>
-                    <div></div>
+                    <button onclick="displayAnswer(3)"><span>+</span><p>Active Anti-OX tem contra-indicação?</p></button>
+                    
                 </div>
-                <hr>
+                <hr class="activeDoubtHr">
+                <div style="display: none;" class="activeAnswer">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, magnam eveniet laudantium accusamus reiciendis nemo nostrum incidunt ipsam omnis illo soluta voluptatibus aut fugit explicabo amet, quidem, fuga quod quos.</p>
+                </div>
                 <div class="activeDoubt text2-content">
-                    <button>+</button>
-                    <p>Precisa de prescrição médica para comprar?</p>
-                    <div></div>
+                    <button onclick="displayAnswer(4)"><span>+</span><p>Precisa de prescrição médica para comprar?</p></button>
+                    
                 </div>
-                <hr>
+                <hr class="activeDoubtHr">
+                <div style="display: none;" class="activeAnswer">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, magnam eveniet laudantium accusamus reiciendis nemo nostrum incidunt ipsam omnis illo soluta voluptatibus aut fugit explicabo amet, quidem, fuga quod quos.</p>
+                </div>
                 <div class="activeDoubt text2-content">
-                    <button>+</button>
-                    <p>E se Active Anti-OX não funcionar para mim?</p>
-                    <div></div>
+                    <button onclick="displayAnswer(5)"><span>+</span><p>E se Active Anti-OX não funcionar para mim?</p></button>
+                    
                 </div>
-                <hr>
+                <hr class="activeDoubtHr">
+                <div style="display: none;" class="activeAnswer">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, magnam eveniet laudantium accusamus reiciendis nemo nostrum incidunt ipsam omnis illo soluta voluptatibus aut fugit explicabo amet, quidem, fuga quod quos.</p>
+                </div>
                 <div class="activeDoubt text2-content">
-                    <button>+</button>
-                    <p>Quando posso perceber resultados?</p>
-                    <div></div>
+                    <button onclick="displayAnswer(6)"><span>+</span><p>Quando posso perceber resultados?</p></button>
+                    
                 </div>
-                <hr>
+                <hr class="activeDoubtHr">
+                <div style="display: none;" class="activeAnswer">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, magnam eveniet laudantium accusamus reiciendis nemo nostrum incidunt ipsam omnis illo soluta voluptatibus aut fugit explicabo amet, quidem, fuga quod quos.</p>
+                </div>
                 <div class="activeDoubt text2-content">
-                    <button>+</button>
-                    <p>Além do Vital 4k o que mais vou receber na minha compra?</p>
-                    <div></div>
+                    <button onclick="displayAnswer(7)"><span>+</span><p>Além do Vital 4k o que mais vou receber na minha compra?</p></button>
+                    
                 </div>
-                <hr>
+                <hr class="activeDoubtHr">
+                <div style="display: none;" class="activeAnswer">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, magnam eveniet laudantium accusamus reiciendis nemo nostrum incidunt ipsam omnis illo soluta voluptatibus aut fugit explicabo amet, quidem, fuga quod quos.</p>
+                </div>
                 <div class="activeDoubt text2-content">
-                    <button>+</button>
-                    <p>Vocês tem uma garantia de satisfação?</p>
-                    <div></div>
+                    <button onclick="displayAnswer(8)"><span>+</span><p>Vocês tem uma garantia de satisfação?</p></button>
+                    
                 </div>
-                <hr>
+                <hr class="activeDoubtHr">
+                <div style="display: none;" class="activeAnswer">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, magnam eveniet laudantium accusamus reiciendis nemo nostrum incidunt ipsam omnis illo soluta voluptatibus aut fugit explicabo amet, quidem, fuga quod quos.</p>
+                </div>
             </div>
         </section>
         <section class="functionActiveContent">
@@ -225,36 +237,37 @@
                     <div class="card-box">
                         <div class="card-title">ESCOLHA SEU PACOTE</div>
                         <div class="card-buttonOption">
-                            <button onclick="qtdBox(1)">1 <br>CAIXA</button>
-                            <button onclick="qtdBox(3)">3 <br>CAIXAS</button>
-                            <button onclick="qtdBox(6)">6 <br>CAIXAS</button>
+                            <button id="option1Card2" onclick="qtdBox2(1)">1 <br>CAIXA</button>
+                            <button id="option2Card2"onclick="qtdBox2(3)">3 <br>CAIXAS</button>
+                            <button id="option3Card2" onclick="qtdBox2(6)">6 <br>CAIXAS</button>
                         </div>
                         <div class="card-description">
-                            <div class="card-description-1box">
+                            <div id="card2DescriptionBox1">
                                 <h4>R$148,60 por caixa</h4>
                                 <p>Economize R$ 136,20</p>
                                 <h4>HOJE: 12x R$49,99</h4>
                                 <p>ou R$44,80 à vista</p>
                                 <button class="card-buyNow">Compra Agora</button>
                             </div>
-                            <div class="card-description-2box" style="display: none;">
-                                <h4>R$148,60 por caixa</h4>
-                                <p>Economize R$ 136,20</p>
+                            <div id="card2DescriptionBox2" style="display: none;">
+                                <h4>R$138,60 por caixa</h4>
+                                <p>Economize R$ 116,20</p>
                                 <h4>HOJE: 12x R$49,99</h4>
-                                <p>ou R$44,80 à vista</p>
+                                <p>ou R$34,80 à vista</p>
                                 <button class="card-buyNow">Compra Agora</button>
                             </div>
-                            <div class="card-description-3box" style="display: none;">
-                                <h4>R$148,60 por caixa</h4>
-                                <p>Economize R$ 136,20</p>
+                            <div id="card2DescriptionBox3" style="display: none;">
+                                <h4>R$128,60 por caixa</h4>
+                                <p>Economize R$ 96,20</p>
                                 <h4>HOJE: 12x R$49,99</h4>
-                                <p>ou R$44,80 à vista</p>
+                                <p>ou R$34,80 à vista</p>
                                 <button class="card-buyNow">Compra Agora</button>
                             </div>
                         </div>
                     </div>
                     <div class="card-box-signature">
-                        <img src="img/badge.png" alt="" style="position: absolute; margin-left: 324px; margin-top: -75px; width: 86px;">
+                        <img src="img/badge.png" alt=""
+                            style="position: absolute; margin-left: 324px; margin-top: -75px; width: 86px;">
                         <div class="card-title">ASSINE E ECONOMIZE(OPCIONAL)</div>
                         <div class="card-description">
                             <ul>
@@ -264,8 +277,8 @@
                                 <li>Cancele quando quiser / Sem Taxas</li>
                             </ul>
                             <div class="cardDescriptionDiscount">
-                                <button class="checkmarkDiscount"><img src="img/check-icon-mobile.png" alt=""></button>
-                                <p>SIM! Eu quero ser assinante e ganhar DESCONTO!</p>
+                                <button class="checkmarkDiscount" onclick="checkboxDiscount2()"><img src="img/check-icon-mobile.png" alt="" id="CheckBox2"></button>
+                                <p><b>SIM!</b>  Eu quero ser assinante e ganhar DESCONTO!</p>
                             </div>
                         </div>
                     </div>
@@ -293,6 +306,6 @@
                 </div>
             </footer>
         </section>
+        <script src="js/script.js"></script>
     </body>
-
 </html>
