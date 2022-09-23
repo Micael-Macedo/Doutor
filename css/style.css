@@ -82,6 +82,9 @@ section {
     background-image: url(../img/background-desktop.png);
     background-size: 100%;
     background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
 }
 
 .introContent h1 {
@@ -94,9 +97,8 @@ section {
 }
 .introContent p {
     font-size: 26px;
-    font-family: Effra;
+    font-family: Roboto, sans-serif;
     margin-bottom: 30px;
-
 }
 
 .introContent span {
@@ -121,25 +123,22 @@ section {
     position: absolute;
 }
 
-
-
-.researchsSkin {
-    height: 945px;
+.researchSkin{
+    height: 100%;
+    background-image: url(../img/doutor-rafael.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
 }
 
 .researchSkinContent {
     display: flex;
-    flex-wrap: wrap;
     position: relative;
 }
-.researchSkinContent img{
-    position: absolute;
-    top: -40.5%;
-    left: 60%;
-}
 .researchSkinContent article {
-    width: 50%;
+    width: 55%;
     text-align: justify;
+    padding-bottom: 80px;
 }
 
 
@@ -174,6 +173,7 @@ section {
     justify-content: center;
     align-items: center;
     margin-top: 82px;
+    gap: 5px;
 }
 
 .card-box {
@@ -181,6 +181,16 @@ section {
     flex-direction: column;
     width: 430px;
     height: 460px;
+    padding: 30px 24px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-box-signature{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 380px;
     padding: 30px 24px;
     border-radius: 20px;
     background-color: white;
@@ -234,12 +244,15 @@ section {
     text-align: center;
     justify-content: center;
 }
+.card-description p{
+text-align: center;
+}
 
-.card-box ul {
+.card-box-signature ul {
     list-style-image: url(../img/check-icon.png);
     padding-left: 40px;
 }
-.card-box li{
+.card-box-signature li{
     align-self: center;
     font-size: 16px;
     text-align: justify;
@@ -278,9 +291,9 @@ section {
 }
 
 .guaranteeBox {
-    padding: 50px 60px;
+    padding: 10% 5%;
     display: flex;
-    height: 275px;
+    height: 300px;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: justify;
@@ -292,6 +305,7 @@ section {
 }
 
 .guaranteeBox p {
+    padding-bottom: 15px;
     line-height: 1.5;
 }
 
@@ -301,7 +315,7 @@ section {
     text-align: justify;
 }
 .functionActiveText{
-    padding: 0 180px 0 0;
+    padding: 0 50px 0 0;
 }
 .functionActiveText p{
     margin-bottom: 20px;
