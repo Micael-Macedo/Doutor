@@ -48,11 +48,10 @@ function qtdBox1(QtdItens) {
     if (QtdItens == 1) {
         escolha = document.getElementById('option1Card1');
         if (option1statusCard1 == 1) {
-            escolha.style.backgroundColor = '#1FAB36';
-            escolha.style.color = 'white';
-            ButtonBox2Card1.style.backgroundColor = '#e6e7e7';
+
+
             option2statusCard1 = 1;
-            ButtonBox3Card1.style.backgroundColor = '#e6e7e7';
+
             option3statusCard1 = 1;
 
             descriptionbox1Card1.style.display = "block";
@@ -61,18 +60,17 @@ function qtdBox1(QtdItens) {
             option1statusCard1 = 0;
         } else
             if (option1statusCard1 == 0) {
-                escolha.style.backgroundColor = '#e6e7e7';
+
                 option1statusCard1 = 1;
             }
     } else
         if (QtdItens == 3) {
             escolha = document.getElementById('option2Card1');
             if (option2statusCard1 == 1) {
-                escolha.style.backgroundColor = '#1FAB36';
-                escolha.style.color = 'white';
-                ButtonBox1Card1.style.backgroundColor = '#e6e7e7';
+
+
                 option1statusCard1 = 1;
-                ButtonBox3Card1.style.backgroundColor = '#e6e7e7';
+
                 option3statusCard1 = 1;
 
                 descriptionbox1Card1.style.display = "none";
@@ -81,7 +79,7 @@ function qtdBox1(QtdItens) {
                 option2statusCard1 = 0;
             } else
                 if (option2statusCard1 == 0) {
-                    escolha.style.backgroundColor = '#e6e7e7';
+
                     option2statusCard1 = 1;
                 }
 
@@ -89,11 +87,7 @@ function qtdBox1(QtdItens) {
             if (QtdItens == 6) {
                 escolha = document.getElementById('option3Card1');
                 if (option3statusCard1 == 1) {
-                    escolha.style.backgroundColor = '#1FAB36';
-                    escolha.style.color = 'white';
-                    ButtonBox1Card1.style.backgroundColor = '#e6e7e7';
                     option1statusCard1 = 1;
-                    ButtonBox2Card1.style.backgroundColor = '#e6e7e7';
                     option2statusCard1 = 1;
 
                     descriptionbox1Card1.style.display = "none";
@@ -103,7 +97,7 @@ function qtdBox1(QtdItens) {
                     option3statusCard1 = 0;
                 } else
                     if (option3statusCard1 == 0) {
-                        escolha.style.backgroundColor = '#e6e7e7';
+
                         option3statusCard1 = 1;
                     }
             }
@@ -113,11 +107,10 @@ function qtdBox2(QtdItens) {
     if (QtdItens == 1) {
         escolha = document.getElementById('option1Card2');
         if (option1statusCard2 == 1) {
-            escolha.style.backgroundColor = '#1FAB36';
-            escolha.style.color = 'white';
-            ButtonBox2Card2.style.backgroundColor = '#e6e7e7';
+
+
             option2statusCard2 = 1;
-            ButtonBox3Card2.style.backgroundColor = '#e6e7e7';
+
             option3statusCard2 = 1;
 
             descriptionbox1Card2.style.display = "block";
@@ -126,18 +119,17 @@ function qtdBox2(QtdItens) {
             option1statusCard2 = 0;
         } else
             if (option1statusCard2 == 0) {
-                escolha.style.backgroundColor = '#e6e7e7';
+
                 option1statusCard2 = 1;
             }
     } else
         if (QtdItens == 3) {
             escolha = document.getElementById('option2Card2');
             if (option2statusCard2 == 1) {
-                escolha.style.backgroundColor = '#1FAB36';
-                escolha.style.color = 'white';
-                ButtonBox1Card2.style.backgroundColor = '#e6e7e7';
+
+
                 option1statusCard2 = 1;
-                ButtonBox3Card2.style.backgroundColor = '#e6e7e7';
+
                 option3statusCard2 = 1;
 
                 descriptionbox1Card2.style.display = "none";
@@ -146,7 +138,7 @@ function qtdBox2(QtdItens) {
                 option2statusCard2 = 0;
             } else
                 if (option2statusCard2 == 0) {
-                    escolha.style.backgroundColor = '#e6e7e7';
+
                     option2statusCard2 = 1;
                 }
 
@@ -154,11 +146,11 @@ function qtdBox2(QtdItens) {
             if (QtdItens == 6) {
                 escolha = document.getElementById('option3Card2');
                 if (option3statusCard2 == 1) {
-                    escolha.style.backgroundColor = '#1FAB36';
-                    escolha.style.color = 'white';
-                    ButtonBox1Card2.style.backgroundColor = '#e6e7e7';
+
+
+
                     option1statusCard2 = 1;
-                    ButtonBox2Card2.style.backgroundColor = '#e6e7e7';
+
                     option2statusCard2 = 1;
 
                     descriptionbox1Card2.style.display = "none";
@@ -167,27 +159,27 @@ function qtdBox2(QtdItens) {
                     option3statusCard2 = 0;
                 } else
                     if (option3statusCard2 == 0) {
-                        escolha.style.backgroundColor = '#e6e7e7';
+
                         option3statusCard2 = 1;
                     }
             }
 }
-function checkboxDiscount1(){
+function checkboxDiscount1() {
     imgCheckbox1 = document.getElementById('CheckBox1');
-    if(checkboxStatus1 == 0){
+    if (checkboxStatus1 == 0) {
         imgCheckbox1.src = '/img/check-icon-mobile-checked.png';
         checkboxStatus1 = 1
-    }else{
+    } else {
         imgCheckbox1.src = '/img/check-icon-mobile.png';
         checkboxStatus1 = 0;
     }
 }
-function checkboxDiscount2(){
+function checkboxDiscount2() {
     imgCheckbox2 = document.getElementById('CheckBox2');
-    if(checkboxStatus2 == 0){
+    if (checkboxStatus2 == 0) {
         imgCheckbox2.src = '/img/check-icon-mobile-checked.png';
         checkboxStatus2 = 1
-    }else{
+    } else {
         imgCheckbox2.src = '/img/check-icon-mobile.png';
         checkboxStatus2 = 0;
     }
