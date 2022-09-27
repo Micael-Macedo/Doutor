@@ -404,6 +404,7 @@ b {
 
 .functionActive {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: justify;
 }
