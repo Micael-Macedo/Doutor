@@ -234,8 +234,8 @@ section.introContent {
 .card-box {
     display: flex;
     flex-direction: column;
-    width: 430px;
-    height: 460px;
+    width: 410px;
+    height: 430px;
     padding: 30px 24px;
     border-radius: 20px;
     background-color: var(--cardBox-bg);
@@ -263,7 +263,7 @@ section.introContent {
     border-radius: 10px;
     color: var(--card-title-text);
     margin-bottom: 20px;
-    padding: 15px 5%;
+    padding: 20px 5%;
     font-family: Effrabold, sans-serif;
 
 }
@@ -272,23 +272,23 @@ section.introContent {
     display: flex;
     flex-flow: row;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
     margin-top: 20px;
-    margin-bottom: 38px;
+    margin-bottom: 28px;
 }
 
 .card-buttonOption button{
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    font-size: 32px;
+    font-size: 30px;
     color: var(--card-Quan-packages-unselected-text);
     background-color: var(--card-Quan-packages-unselected);
     border: var(--card-Quan-packages-unselected);
     border-radius: 5px;
     align-items: center;
     justify-content: center;
-    width: 120px;
+    width: 110px;
     height: 100px;
     transition: .3s;
 }
@@ -335,7 +335,8 @@ section.introContent {
 }
 
 .card-buyNow {
-    margin-top: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: var(--text2-content);
     width: 320px;
     height: 40px;
@@ -483,16 +484,18 @@ li {
     color: var(--text2-content);
 }
 
-.functionActiveContent {
-    margin-bottom: 95px;
+.functionActiveContent{
+    padding-bottom: 5%;
 }
-
 .footerContent {
     background-color: var(--footer-bg);
-    padding: 4% 20%;
+    padding: 3% 20% 3%;    
     margin: 0;
 }
 
 footer p {
+    text-align: start;
+    line-height: 1.5;
+    font-size: 22px;
     color: var(--footer-text);
 }
