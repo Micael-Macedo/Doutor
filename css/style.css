@@ -408,7 +408,9 @@ b {
     justify-content: center;
     text-align: justify;
 }
-
+.functionActive div{
+    max-width: 600px;
+}
 .functionActiveText {
     padding: auto;
     padding-right: 10%;
